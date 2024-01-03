@@ -1,0 +1,18 @@
+ <!-- Envelopper le contenu avec une div ou autre élément -->
+ 
+ <!-- affichache des films-->
+<div class="row">
+  <div *ngFor="let movie of films" class="col-4 justify-content-center text-center">
+    <app-item-film [movie]="movie" (change)="handleClick($event)"></app-item-film>
+  </div>
+</div>
+
+
+
+
+ 
+  
+  
+  
+  
+  

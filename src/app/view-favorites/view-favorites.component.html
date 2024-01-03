@@ -1,0 +1,15 @@
+
+<div *ngIf="favoriteMovies && favoriteMovies.length > 0">
+  <h2>Your Favorite Movies</h2>
+  <ul>
+    <li *ngFor="let movie of favoriteMovies">
+      <img [src]="movie.imageURL" alt="{{ movie.title }} Image" width="100" height="150">
+      <p>{{ movie.title }}</p>
+    </li>
+  </ul>
+</div>
+<div *ngIf="!favoriteMovies || favoriteMovies.length === 0">
+  <p>No favorite movies available.</p>
+</div>
+
+  

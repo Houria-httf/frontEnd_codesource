@@ -1,0 +1,11 @@
+{
+  "routes": [
+    "/",
+    "/details",
+    "/favorites",
+    "/loggin",
+    "/results",
+    "/signin",
+    "/signup"
+  ]
+}

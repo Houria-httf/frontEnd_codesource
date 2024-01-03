@@ -1,0 +1,16 @@
+ a{
+    color: green;
+    font-weight: bold ;
+ }
+  
+    
+.navbar .navbar-brand{
+    color: black;
+    font-weight: bold ;
+ }
+ .navbar-nav .nav-item  .nav-link{
+     color: black;
+      /* Déplace l'élément vers la droite en utilisant la marge automatique à gauche */
+     font-weight: bold;
+}
+ 

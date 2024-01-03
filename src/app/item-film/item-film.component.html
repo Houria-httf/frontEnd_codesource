@@ -1,0 +1,14 @@
+
+<div class="card"   style="width: 15rem;">
+  <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/{{movie.imageUrl}}" alt={{movie?.title}}/>
+  <div class="card-body">
+    <h5 class="card-title">{{movie?.title}}</h5>
+    <p class="card-text">{{movie?.annee}}</p>
+    <a class="btn btn-primary" [routerLink]="['/details',movie.id]">Watch</a>
+    <a class="btn btn-primary" [routerLink]="['/comment',movie.id]">comment</a>
+    <a><button mat-icon-button (click)="toggleFavorite()" [ngClass]="{'favorite': isFavorite}" [class.clicked]="true" [routerLink]="['/favorites']">
+      <mat-icon class="text-danger">{{ isFavorite ? 'favorite' : 'favorite_border' }}</mat-icon>
+    </button> </a>
+    
+  </div>
+</div>
